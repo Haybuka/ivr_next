@@ -6,13 +6,13 @@
 }
 
 .overview:nth-child(1) {
-  background-image: url('/home/services_1.jpg');
+  background-image: url('/home/solarInstal.jpeg');
 }
 .overview:nth-child(2) {
   background-image: url('/home/services_3.jpg');
 }
 .overview:nth-child(3) {
-  background-image: url('/home/services_2.jpg');
+  background-image: url('/home/automation.jpeg');
 }
 .overview:nth-child(4) {
   background-image: url('/home/services_4.jpg');

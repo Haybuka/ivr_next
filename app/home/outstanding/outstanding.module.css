@@ -8,8 +8,8 @@
 
 .div {
   @apply w-full md:w-[400px] h-[400px] bg-black rounded-md;
-  background-image: url('/home/manWiring.jpg');
-  background-position: center;
+  background-image: url('/home/ceo.jpeg');
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
 }

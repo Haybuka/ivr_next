@@ -4,7 +4,10 @@ import Link from 'next/link';
 import Burger from './burger';
 import Desktop from './desktop';
 import Mobile from './mobile';
+import { Inter, Poppins } from 'next/font/google';
+import cls from 'classnames';
 
+const poppins = Poppins({ subsets: ['latin'], weight: ['400'] });
 const NavBar = () => {
   const [toggle, setToggle] = useState(false);
   const navigation = [
@@ -36,7 +39,13 @@ const NavBar = () => {
         <nav className="md:flex justify-between items-center">
           <h3 className="text-orange-600 font-bold text-2xl lg:text-3xl font-odor flex justify-between items-center">
             <Link href={'/'} className="inline-block">
-              IPW
+              <div className={cls('flex items-start', poppins.className)}>
+                <p className="uppercase ">Ivr</p>
+                <p className="border-l-2 border-black px-2 mx-2 py-0 text-black">
+                  <span className="block text-sm lowercase">Power</span>
+                  <span className="block text-sm lowercase">Works</span>
+                </p>
+              </div>
             </Link>
             <Burger toggle={handleToggle} />
           </h3>

@@ -1,7 +1,14 @@
 import React from 'react';
+import Banner from './banner';
+import Quote from './quote';
 
-const Contact = () => {
-  return <div>Contact</div>;
+const Index = () => {
+  return (
+    <section className="mt-20 md:px-0">
+      <Banner text="Contact Us" />
+      <Quote />
+    </section>
+  );
 };
 
-export default Contact;
+export default Index;

@@ -17,7 +17,7 @@ const Outstanding = () => {
           exercitationem!
         </p>
         <p className="static md:absolute md:top-2/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-2/2 bg-orange-600 py-3 px-6 text-black">
-          <span className="block font-odor">Roland Awoda</span>
+          <span className="block font-odor">Paul Ikwe Alex</span>
           <span className="block">ceo</span>
         </p>
       </div>

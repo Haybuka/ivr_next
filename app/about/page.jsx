@@ -29,7 +29,7 @@ const about = [
       'We specialize in designing and installing advanced automation systems for residential and commercial properties. ',
     text_two:
       ' Our solutions include smart lighting, home automation, security systems, access control, energy management, and more. We integrate cutting-edge technology to enhance comfort, convenience, and energy efficiency',
-    imageSrc: '/services/services_2',
+    imageSrc: '/services/services_2.jpg',
   },
   {
     id: 4,

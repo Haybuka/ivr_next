@@ -1,5 +1,3 @@
-// import Card from '../card';
-
 import Card from '@/app/components/card';
 import styles from './service.module.css';
 
