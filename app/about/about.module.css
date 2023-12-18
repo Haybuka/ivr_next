@@ -1,0 +1,6 @@
+.about {
+  background-image: url('/home/ornament.svg'), url('/home/haeiki.svg');
+  background-position: bottom left, top right;
+  background-repeat: no-repeat;
+  background-size: 10%, 30%;
+}

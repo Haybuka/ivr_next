@@ -1,0 +1,4 @@
+.banner {
+  @apply h-[300px] mt-24 md:mt-2 md:h-[500px] 2xl:h-[600px] bg-orange-700 md:px-12 flex items-center relative z-10 justify-center md:justify-start bg-cover bg-fixed bg-no-repeat bg-blend-soft-light bg-center;
+  background-image: url('/about/manWire.jpg');
+}
