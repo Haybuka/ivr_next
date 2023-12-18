@@ -1,0 +1,15 @@
+.mileage {
+  @apply lg:h-[600px] bg-white lg:flex justify-between items-center p-2 md:p-0 my-10 md:my-32 lg:px-[90px];
+
+  background-size: 2em 2em;
+  background-color: #ffffff;
+  background-attachment: fixed;
+}
+
+.mileage_bg {
+  @apply lg:block w-full lg:w-[400px] bg-gray-200 h-[400px] rounded-xl;
+  background-image: url('/home/mileage.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

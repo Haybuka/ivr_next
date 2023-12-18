@@ -1,0 +1,15 @@
+.float {
+  @apply md:flex bg-white relative w-full lg:w-[800px] rounded-br-md;
+  background-image: url('/home/ornament.svg'), url('/home/ornament.svg');
+  background-position: center bottom, top left;
+  background-repeat: no-repeat;
+  background-size: 5%;
+}
+
+.div {
+  @apply w-full hidden lg:block md:w-[400px] h-[400px] bg-black rounded-md;
+  background-image: url('/home/manWire.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

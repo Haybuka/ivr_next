@@ -1,0 +1,19 @@
+.overview {
+  @apply col-span-12 before:absolute before:content-[''] before:w-full before:h-full before:bg-black before:opacity-30 before:rounded-md relative font-titilium text-lg md:col-span-6 flex justify-center items-center lg:col-span-3 md:w-full w-full h-[250px] text-white shadow-md rounded-md;
+
+  background-position: center;
+  background-size: cover;
+}
+
+.overview:nth-child(1) {
+  background-image: url('/home/services_1.jpg');
+}
+.overview:nth-child(2) {
+  background-image: url('/home/services_3.jpg');
+}
+.overview:nth-child(3) {
+  background-image: url('/home/services_2.jpg');
+}
+.overview:nth-child(4) {
+  background-image: url('/home/services_4.jpg');
+}
