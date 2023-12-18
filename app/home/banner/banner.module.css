@@ -1,0 +1,41 @@
+.hyphen {
+  @apply bg-black rounded-md w-10 md:w-36 h-1 md:h-2 md:inline-block mr-4;
+}
+.banner {
+  @apply lg:h-[600px] lg:flex items-center justify-between gap-2 lg:px-16 md:flex-row-reverse  md:my-32;
+}
+.banner_grid {
+  @apply lg:grid grid-cols-12 gap-3 h-full w-full py-4 px-0;
+}
+
+.grid_one {
+  @apply h-full md:h-auto col-span-6 bg-gray-100 row-span-2 lg:rounded-lg;
+  background-image: url('/home/grid_one.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid_two {
+  @apply h-[280px] w-full md:h-auto col-span-6 bg-gray-100 lg:rounded-lg;
+  background-image: url('/home/grid_two.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid_three {
+  @apply h-[280px] w-full md:h-auto col-span-6 bg-gray-100 lg:rounded-lg;
+  background-image: url('/home/multimeter.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mobile {
+  @apply block lg:hidden h-[360px] bg-gray-200 my-4 lg:rounded-lg;
+  background-image: url('/home/banner.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
