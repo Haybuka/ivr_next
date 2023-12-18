@@ -2,26 +2,7 @@ import React from 'react';
 import Button from '../components/button';
 import Link from 'next/link';
 
-const navigation = [
-  {
-    name: 'home',
-    path: '/',
-  },
-  {
-    name: 'About',
-    path: '/About',
-  },
-  {
-    name: 'services',
-    path: '/services',
-  },
-  {
-    name: 'contact',
-    path: '/contact',
-  },
-];
-
-const Desktop = () => {
+const Desktop = ({ navigation }) => {
   return (
     <>
       <ul className="hidden lg:flex items-center font-titilium ">

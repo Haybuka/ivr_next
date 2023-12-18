@@ -2,26 +2,7 @@ import React from 'react';
 import Button from '../components/button';
 import Link from 'next/link';
 
-const navigation = [
-  {
-    name: 'home',
-    path: '/',
-  },
-  {
-    name: 'About',
-    path: '/About',
-  },
-  {
-    name: 'services',
-    path: '/services',
-  },
-  {
-    name: 'contact',
-    path: '/contact',
-  },
-];
-
-const Mobile = ({ toggle }) => {
+const Mobile = ({ toggle, navigation }) => {
   return (
     <section className="absolute bg-white w-full text-center h-screen left-0 px-4 overflow-hidden">
       <ul className="block lg:flex items-center font-titilium ">

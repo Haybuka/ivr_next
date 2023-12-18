@@ -7,6 +7,24 @@ import Mobile from './mobile';
 
 const NavBar = () => {
   const [toggle, setToggle] = useState(false);
+  const navigation = [
+    {
+      name: 'home',
+      path: '/',
+    },
+    {
+      name: 'About',
+      path: '/about',
+    },
+    {
+      name: 'services',
+      path: '/services',
+    },
+    {
+      name: 'contact',
+      path: '/contact',
+    },
+  ];
 
   const handleToggle = () => {
     setToggle((prev) => !prev);
@@ -22,8 +40,8 @@ const NavBar = () => {
             </Link>
             <Burger toggle={handleToggle} />
           </h3>
-          <Desktop />
-          {toggle && <Mobile toggle={handleToggle} />}
+          <Desktop navigation={navigation} />
+          {toggle && <Mobile toggle={handleToggle} navigation={navigation} />}
         </nav>
       </header>
     </>

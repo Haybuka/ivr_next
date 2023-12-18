@@ -1,4 +1,4 @@
-import Card from './card';
+import Card from '../components/card';
 
 import styles from './about.module.css';
 import Banner from './banner';
