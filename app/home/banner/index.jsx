@@ -27,9 +27,10 @@ const Banner = () => {
           </p>
         </h2>
         <p className="w-auto lg:w-[380px] my-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nemo
-          explicabo minima minus autem perspiciatis quo saepe consequatur
-          aperiam sunt.
+          Ivr power works is a fast growing system of electrical engineering
+          services with a mission to contribute to the world's smart cities
+          vision by delivering quality and reliable engineering solutions one
+          city at a time.
         </p>
         <Link href={'/contact'}>
           <Button

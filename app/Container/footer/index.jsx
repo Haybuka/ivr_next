@@ -5,7 +5,7 @@ import Section from './section';
 const Footer = () => {
   const about = ['Our story', 'Designer', 'Products'];
   const support = [`FAQ's`, 'Features', 'Help center'];
-  const contact = [`0814 278 7101`, 'Iivrpowerworks@gmail.com'];
+  const contact = [`0814 278 7101`, 'Ivrpowerworks@gmail.com'];
   const icons = [
     { name: 'twitter', url: '/social_icons/twitter.svg' },
     { name: 'linkedIn', url: '/social_icons/linked.svg' },

@@ -11,10 +11,8 @@ const Outstanding = () => {
           <span className="text-orange-600">Commercial</span> services.
         </h3>
         <p className="font-normal font-titilium my-4">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia est
-          voluptate illo blanditiis ullam animi amet nihil maxime. Nostrum
-          corrupti eum praesentium amet et excepturi autem iure deleniti aliquid
-          exercitationem!
+          At IVR power works, we are committed to delivering smart, quality and
+          reliable engineering solutions.
         </p>
         <p className="static md:absolute md:top-2/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-2/2 bg-orange-600 py-3 px-6 text-black">
           <span className="block font-odor">Paul Ikwe Alex</span>

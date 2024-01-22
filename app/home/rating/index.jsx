@@ -21,10 +21,10 @@ const Rating = () => {
               maintenance ?
             </h3>
             <p className="font-normal font-titilium my-4">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia est
-              voluptate illo blanditiis ullam animi amet nihil maxime. Nostrum
-              corrupti eum praesentium amet et excepturi autem iure deleniti
-              aliquid exercitationem!
+              Ivr power works is a system of highly tech engineering solutions
+              with a track record of excellence, reliability, experience and
+              trustworthiness with projects completed across Lagos and western
+              Nigeria
             </p>
             <div className="flex gap-4 ">
               <Link href={'/contact'}>
