@@ -7,7 +7,7 @@ import Rating from './home/rating';
 
 export default function Home() {
   return (
-    <main className="mt-[80px]">
+    <main className="mt-[80px] ">
       <Banner />
       <section className="px-4 md:px-16 my-4">
         <Outstanding />

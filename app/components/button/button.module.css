@@ -7,5 +7,6 @@
 }
 
 .btn_bricks {
-  @apply bg-orange-600 text-white;
+  @apply bg-ivr-100 text-white;
+  /* bg-orange-600 */
 }

@@ -12,6 +12,11 @@ module.exports = {
         titilium: ['Titillium Web', 'sans-serif'],
         odor: ['Odor Mean Chey', 'serif'],
       },
+      colors: {
+        ivr: {
+          100: "#b71540",
+        }
+      }
     },
   },
   plugins: [

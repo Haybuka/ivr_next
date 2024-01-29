@@ -37,11 +37,11 @@ const NavBar = () => {
     <>
       <header className="py-6 px-4 md:px-16 shadow-md fixed top-0 w-full bg-white z-40 text-lg">
         <nav className="md:flex justify-between items-center">
-          <h3 className="text-orange-600 font-bold text-2xl lg:text-3xl font-odor flex justify-between items-center">
+          <h3 className="text-ivr-100 font-bold text-2xl lg:text-3xl font-odor flex justify-between items-center">
             <Link href={'/'} className="inline-block">
               <div className={cls('flex items-start', poppins.className)}>
                 <p className="uppercase ">Ivr</p>
-                <p className="border-l-2 border-black px-2 mx-2 py-0 text-black">
+                <p className="border-l-2 border-black px-2 mx-2 py-0 text-ivr-100">
                   <span className="block text-sm lowercase">Power</span>
                   <span className="block text-sm lowercase">Works</span>
                 </p>

@@ -10,7 +10,7 @@ const Mobile = ({ toggle, navigation }) => {
           <Link
             key={id}
             href={item.path}
-            className={' text-orange-600 mx-4'}
+            className={'  text-ivr-100 mx-4'}
             onClick={toggle}
           >
             <li className="capitalize">{item.name}</li>

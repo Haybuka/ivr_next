@@ -1,6 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
 import Section from './section';
+import cls from 'classnames';
+import { Inter, Poppins } from 'next/font/google';
+const poppins = Poppins({ subsets: ['latin'], weight: ['400'] });
 
 const Footer = () => {
   const about = ['Our story', 'Designer', 'Products'];
@@ -21,9 +24,15 @@ const Footer = () => {
         <Section heading="Contact us" list={contact} />
         <section className="mb-6 md:mb-0">
           <aside className="flex items-center text-black font-bold">
-            <h3 className="text-orange-600 font-bold text-2xl lg:text-3xl font-odor ">
+            <h3 className="text-ivr-100 font-bold text-2xl lg:text-3xl font-odor ">
               <Link href={'/'} className="inline-block">
-                IPW
+                <div className={cls('flex items-start', poppins.className)}>
+                  <p className="uppercase ">Ivr</p>
+                  <p className="border-l-2 border-black px-2 mx-2 py-0 text-ivr-100">
+                    <span className="block text-sm lowercase">Power</span>
+                    <span className="block text-sm lowercase">Works</span>
+                  </p>
+                </div>
               </Link>
             </h3>
           </aside>

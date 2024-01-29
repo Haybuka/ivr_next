@@ -12,7 +12,7 @@ const Mileage = () => {
           <div className=" py-3 bg-white lg:px-4">
             <p className="my-3">
               IVR power works is a{' '}
-              <span className="text-orange-600">
+              <span className="text-ivr-100">
                 fast growing electrical and electronics
               </span>
               business specializing in the installation and maintenance of
@@ -21,7 +21,7 @@ const Mileage = () => {
             </p>
             <p className="my-3">
               With a team of{' '}
-              <span className="text-orange-600">
+              <span className="text-ivr-100">
                 highly skilled professionals and a commitment to delivering
                 exceptional service
               </span>
@@ -32,7 +32,7 @@ const Mileage = () => {
             </p>
             <p className="my-3">
               With a team of{' '}
-              <span className="text-orange-600">
+              <span className="text-ivr-100">
                 highly skilled professionals and a commitment to delivering
                 exceptional service
               </span>

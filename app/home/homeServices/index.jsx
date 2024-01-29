@@ -39,7 +39,7 @@ const HomeServices = () => {
       <aside className="grid grid-cols-12 justify-between  items-center flex-wrap gap-4">
         {overview.map((view) => (
           <div key={view.id} className={cls(styles.overview)}>
-            <p className="text-4xl font-semibold absolute top-2 left-2 text-orange-600">
+            <p className="text-4xl font-semibold absolute top-2 left-2 text-ivr-100">
               0{view.id}
             </p>
             <h4 className="text-white z-10 text-xl">{view.title}</h4>
@@ -48,7 +48,7 @@ const HomeServices = () => {
       </aside>
       <Link
         href={'/services'}
-        className="relative block before:rounded-md bg-white before:-z-10 before:absolute before:bg-orange-600 before:h-full before:w-full before:-bottom-1 before:-right-1  before:content-[''] border capitalize rounded-md w-[160px] mx-auto text-center my-4 py-3"
+        className="relative block before:rounded-md bg-white before:-z-10 before:absolute before:bg-ivr-100 before:h-full before:w-full before:-bottom-1 before:-right-1  before:content-[''] border capitalize rounded-md w-[160px] mx-auto text-center my-4 py-3"
       >
         Learn More
       </Link>
