@@ -42,7 +42,7 @@ const Footer = () => {
           </p>
         </section>
       </div>
-      <aside className="flex justify-center border-t-2 pt-6 md:mt-10">
+      <aside className="flex justify-center border-t-2 text-[12px] pt-6 md:mt-10">
         <p>&copy; 2024; IVR Power</p>
       </aside>
     </footer>
