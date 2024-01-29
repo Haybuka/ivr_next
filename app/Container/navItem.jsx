@@ -5,13 +5,15 @@ import { usePathname } from 'next/navigation';
 
 const NavItem = ({ info }) => {
   const pathname = usePathname();
-
+  console.log(pathname);
   return (
     <Link
       href={info.path}
       className={cls(
         'mx-4',
-        info?.path.includes(pathname) ? 'text-ivr-100' : 'text-black'
+        info?.path.includes(pathname)
+          ? 'text-ivr-100 font-semibold'
+          : 'text-black'
       )}
     >
       <li className="capitalize">{info.name}</li>
