@@ -30,7 +30,7 @@ const Mileage = () => {
               expertise, quality workmanship, and dedication to customer
               satisfaction.
             </p>
-            <p className="my-3">
+            {/* <p className="my-3">
               With a team of{' '}
               <span className="text-ivr-100">
                 highly skilled professionals and a commitment to delivering
@@ -40,7 +40,7 @@ const Mileage = () => {
               solutions to our valued clients. We pride ourselves on our
               expertise, quality workmanship, and dedication to customer
               satisfaction.
-            </p>
+            </p> */}
           </div>
         </section>
       </article>
