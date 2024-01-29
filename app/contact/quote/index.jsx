@@ -11,7 +11,7 @@ const Quote = () => {
     {
       title: 'Phone',
       src: '/contact/phone.svg',
-      value: '09786275265479',
+      value: '08142787101',
     },
     {
       title: 'Address',
