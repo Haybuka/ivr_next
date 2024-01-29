@@ -28,7 +28,7 @@ const Banner = () => {
         </h2>
         <p className="w-auto lg:w-[380px] my-4">
           Ivr power works is a fast growing system of electrical engineering
-          services with a mission to contribute to the world's smart cities
+          services with a mission to contribute to the world&apos;s smart cities
           vision by delivering quality and reliable engineering solutions one
           city at a time.
         </p>
