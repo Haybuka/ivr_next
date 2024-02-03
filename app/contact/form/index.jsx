@@ -5,6 +5,7 @@ import Button from '@/app/components/button';
 import FormInput from './formInput';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
+import { useState } from 'react';
 
 const schema = yup
   .object({
@@ -15,11 +16,7 @@ const schema = yup
   .required();
 
 const Form = () => {
-  const {
-    control,
-    handleSubmit,
-    formState: { errors, isSubmitting },
-  } = useForm({
+  const { control, handleSubmit } = useForm({
     defaultValues: {
       name: '',
       phone: '',
@@ -29,11 +26,12 @@ const Form = () => {
     resolver: yupResolver(schema),
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const onSubmit = (data) => {
+    setIsSubmitting(true);
     console.log(data, 'on submuit');
   };
 
-  console.log(errors);
   return (
     <form
       className=" my-4 lg:shadow-md bg-white p-2 rounded-lg lg:px-5 w-full lg:w-[600px]"
@@ -46,32 +44,54 @@ const Form = () => {
         name="name"
         type="text"
         control={control}
-        render={({ field }) => {
-          return <FormInput title="Name" field={field} />;
+        render={({ field, formState: { errors } }) => {
+          const error = errors[field?.name]?.message;
+          return <FormInput title="Name" field={field} error={error} />;
         }}
       />
       <Controller
         name="phone"
         control={control}
-        render={({ field }) => {
-          return <FormInput title="Phone Number" type="number" field={field} />;
+        render={({ field, formState: { errors } }) => {
+          const error = errors[field?.name]?.message;
+          return (
+            <FormInput
+              title="Phone Number"
+              type="number"
+              field={field}
+              error={error}
+            />
+          );
         }}
       />
       <Controller
         name="email"
         control={control}
-        render={({ field }) => {
-          return <FormInput title="Email" type="email" field={field} />;
+        render={({ field, formState: { errors } }) => {
+          const error = errors[field?.name]?.message;
+          return (
+            <FormInput title="Email" type="email" field={field} error={error} />
+          );
         }}
       />
       <Controller
         name="message"
         control={control}
-        render={({ field }) => {
-          return <FormInput title="Message" type="textarea" field={field} />;
+        render={({ field, formState: { errors } }) => {
+          const error = errors[field?.name]?.message;
+          return (
+            <FormInput
+              title="Message"
+              type="textarea"
+              field={field}
+              error={error}
+            />
+          );
         }}
       />
-      <Button text="Submit" propStyle="text-center block w-full my-3" />
+      {!isSubmitting && (
+        <Button text="Submit" propStyle="text-center block w-full my-3" />
+      )}
     </form>
   );
 };
