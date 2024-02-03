@@ -90,7 +90,7 @@ const Form = () => {
         }}
       />
       {!isSubmitting && (
-        <Button text="Submit" propStyle="text-center block w-full my-3" />
+        <Button text="Submit" propStyle="text-center block w-full my-6" />
       )}
     </form>
   );

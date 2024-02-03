@@ -13,7 +13,11 @@ const FormInput = ({ title, type = 'text', field, error }) => {
       ) : (
         <input {...field} type={type} className={cls(styles.input)} />
       )}
-      {error && <p className="text-red-500 text-sm">{error}</p>}
+      {error && (
+        <p className="text-red-500 text-[12px] my-2">
+          {`${error.slice(0, 1).toUpperCase()}${error.slice(1)} `}
+        </p>
+      )}
     </label>
   );
 };
