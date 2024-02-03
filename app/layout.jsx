@@ -1,6 +1,5 @@
 import { Inter } from 'next/font/google';
 import cls from 'classname';
-import Link from 'next/link';
 
 import './globals.css';
 import Footer from './Container/footer';
