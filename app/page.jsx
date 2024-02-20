@@ -1,9 +1,9 @@
-import Image from 'next/image';
 import Banner from './home/banner';
 import Outstanding from './home/outstanding';
 import HomeServices from './home/homeServices';
 import Mileage from './home/mileage';
 import Rating from './home/rating';
+import Partners from './home/partners';
 
 export default function Home() {
   return (
@@ -14,6 +14,7 @@ export default function Home() {
         <HomeServices />
         <Mileage />
       </section>
+      <Partners />
       <Rating />
     </main>
   );
