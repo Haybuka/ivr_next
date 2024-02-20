@@ -13,8 +13,8 @@ export default function Home() {
         <Outstanding />
         <HomeServices />
         <Mileage />
+        <Partners />
       </section>
-      <Partners />
       <Rating />
     </main>
   );
