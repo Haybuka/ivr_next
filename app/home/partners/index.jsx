@@ -14,7 +14,7 @@ const Partners = () => {
         slidesPerView={4}
         centeredSlides
         autoplay={{
-          delay: 2500,
+          delay: 2000,
         }}
       >
         <SwiperSlide>
@@ -23,8 +23,7 @@ const Partners = () => {
             src="/home/IOGC-Logo_Color.svg"
             height={140}
             width={100}
-            className="flex justify-center items-center"
-            alt="Follow us on Twitter"
+            alt=""
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -33,7 +32,7 @@ const Partners = () => {
             src="/home/Chorus.svg"
             height={140}
             width={100}
-            alt="Follow us on Twitter"
+            alt=""
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -43,7 +42,7 @@ const Partners = () => {
             src="/home/lamata.png"
             height={140}
             width={100}
-            alt="Follow us on Twitter"
+            alt=""
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -53,16 +52,19 @@ const Partners = () => {
             src="/home/oou.jpeg"
             height={140}
             width={100}
-            alt="Follow us on Twitter"
+            alt=""
           />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image priority src="/home/tap.svg" height={140} width={80} alt="" />
         </SwiperSlide>
         <SwiperSlide>
           <Image
             priority
-            src="/home/tap.svg"
+            src="/home/IOGC-Logo_Color.svg"
             height={140}
-            width={80}
-            alt="Follow us on Twitter"
+            width={100}
+            alt=""
           />
         </SwiperSlide>
       </Swiper>
