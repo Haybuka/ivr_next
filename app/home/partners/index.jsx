@@ -7,7 +7,7 @@ const Partners = () => {
   return (
     <section>
       <h4 className="text-2xl font-semibold bg-white py-3 px-4 text-center my-5 font-titilium">
-        Our partners
+        Our clients
       </h4>
       <Swiper
         spaceBetween={50}
