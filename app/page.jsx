@@ -5,6 +5,14 @@ import Mileage from './home/mileage';
 import Rating from './home/rating';
 import Partners from './home/partners';
 
+
+import { Metadata } from 'next';
+ 
+export const metadata: Metadata = {
+  title: 'Ivr Power Works',
+};
+
+
 export default function Home() {
   return (
     <main className="mt-[80px] ">
