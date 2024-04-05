@@ -24,6 +24,10 @@ const NavBar = () => {
       path: '/services',
     },
     {
+      name: 'gallery',
+      path: '/gallery',
+    },
+    {
       name: 'contact',
       path: '/contact',
     },
