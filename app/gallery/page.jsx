@@ -6,6 +6,7 @@ import styles from './gallery.module.css';
 import { useState } from 'react';
 import GSlider from './GSlider';
 import GDescription from './GDescription';
+import { gallerySlides } from '../utils';
 const Index = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -13,43 +14,6 @@ const Index = () => {
     setActiveIndex(index);
   };
 
-  const gallerySlides = [
-    {
-      title: 'Modern Art',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate enim illo dolorem amet in ducimus dolor sit repudiandae adipisci eligendi.',
-      img: '/gallery/modern_art.jpg',
-    },
-    {
-      title: 'Minimalism',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate enim illo dolorem amet in ducimus dolor sit repudiandae adipisci eligendi.',
-      img: '/gallery/minimalism.jpg',
-    },
-    {
-      title: 'Mid-century modern',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate enim illo dolorem amet in ducimus dolor sit repudiandae adipisci eligendi.',
-      img: '/gallery/modern.jpg',
-    },
-    {
-      title: 'Art Deco',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate enim illo dolorem amet in ducimus dolor sit repudiandae adipisci eligendi.',
-      img: '/gallery/art_deco.jpg',
-    },
-    {
-      title: 'Scandinavian Design',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate enim illo dolorem amet in ducimus dolor sit repudiandae adipisci eligendi.',
-      img: '/gallery/room.jpg',
-    },
-    {
-      title: 'Japandi',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate enim illo dolorem amet in ducimus dolor sit repudiandae adipisci eligendi.',
-      img: '/gallery/minimalism.jpg',
-    },
-    {
-      title: 'Modern Art',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate enim illo dolorem amet in ducimus dolor sit repudiandae adipisci eligendi.',
-      img: '/gallery/modern_art.jpg',
-    },
-  ];
   return (
     <main className="mt-20">
       <section className={cls(styles.banner)}>

@@ -7,6 +7,7 @@ import Image from 'next/image';
 
 import 'swiper/css';
 import 'swiper/css/autoplay';
+import { sliderBreakpoints } from '../utils';
 
 const GSlider = ({ sliders, handleActiveIndex, activeIndex }) => {
   return (
@@ -35,28 +36,7 @@ const GSlider = ({ sliders, handleActiveIndex, activeIndex }) => {
           clickable: true,
         }}
         modules={[Pagination]}
-        breakpoints={{
-          300: {
-            slidesPerView: 2,
-            spaceBetween: 10,
-          },
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 3,
-            spaceBetween: 40,
-          },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 50,
-          },
-          1200: {
-            slidesPerView: 4,
-            spaceBetween: 50,
-          },
-        }}
+        breakpoints={sliderBreakpoints}
       >
         {sliders.map((view, id) => (
           <SwiperSlide

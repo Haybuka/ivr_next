@@ -4,34 +4,13 @@ import Link from 'next/link';
 import Burger from './burger';
 import Desktop from './desktop';
 import Mobile from './mobile';
-import { Inter, Poppins } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 import cls from 'classnames';
+import { navigation } from '../utils';
 
 const poppins = Poppins({ subsets: ['latin'], weight: ['400'] });
 const NavBar = () => {
   const [toggle, setToggle] = useState(false);
-  const navigation = [
-    {
-      name: 'home',
-      path: '/',
-    },
-    {
-      name: 'About',
-      path: '/about',
-    },
-    {
-      name: 'services',
-      path: '/services',
-    },
-    {
-      name: 'gallery',
-      path: '/gallery',
-    },
-    {
-      name: 'contact',
-      path: '/contact',
-    },
-  ];
 
   const handleToggle = () => {
     setToggle((prev) => !prev);
