@@ -1,4 +1,5 @@
 .banner {
-  @apply h-[300px] md:h-[500px] 2xl:h-[600px] bg-orange-700 flex items-center relative z-10 justify-center md:justify-start bg-cover bg-fixed bg-no-repeat bg-blend-soft-light bg-center;
-  background-image: url('/home/grid_three.jpg');
+  @apply h-[300px] md:h-[500px] 2xl:h-[600px] bg-orange-700 flex items-center relative z-10 justify-center md:justify-start bg-cover bg-fixed bg-no-repeat bg-blend-soft-light;
+  background-image: url('/gallery/gallery.jpeg');
+  background-position: bottom center;
 }
