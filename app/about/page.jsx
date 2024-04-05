@@ -42,6 +42,12 @@ const about = [
   },
 ];
 
+export const metadata = {
+  title: 'IVR | About',
+  description:
+    'Ivr power works, a fast growing system of electrical engineering services. ',
+};
+
 const Index = () => {
   return (
     <main className="mt-20 md:px-0">
