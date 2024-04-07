@@ -1,5 +1,4 @@
 import Card from '../components/card';
-import FadeIn from '../components/fadeIn';
 
 import styles from './about.module.css';
 import Banner from './banner';
@@ -48,11 +47,9 @@ const Index = () => {
     <main className="mt-20 md:px-0">
       <Banner />
       <section className={styles.about}>
-        <FadeIn>
-          <h4 className="text-3xl font-semibold   lg:px-4 font-titilium text-center my-10 md:my-20">
-            Why Choose Us ?
-          </h4>
-        </FadeIn>
+        <h4 className="text-3xl font-semibold   lg:px-4 font-titilium text-center my-10 md:my-20">
+          Why Choose Us ?
+        </h4>
 
         {about.map((item, id) => (
           <Card data={item} key={id} />

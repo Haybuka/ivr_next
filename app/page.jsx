@@ -4,7 +4,6 @@ import HomeServices from './home/homeServices';
 import Mileage from './home/mileage';
 import Rating from './home/rating';
 import Partners from './home/partners';
-import Testimonials from './home/testimonials';
 
 export default function Home() {
   return (
@@ -17,7 +16,6 @@ export default function Home() {
         <Partners />
       </section>
       <Rating />
-      <Testimonials />
     </main>
   );
 }

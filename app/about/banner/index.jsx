@@ -1,11 +1,15 @@
 import styles from './banner.module.css';
 import cls from 'classnames';
-import BannerHeading from './heading';
-
 const Banner = ({ text = 'About Us' }) => {
   return (
     <section className={cls(styles.banner)}>
-      <BannerHeading text={text} />
+      <h3
+        className={cls(
+          'text-xl  md:text-3xl uppercase text-white md:ml-6 tracking-widest font-titilium'
+        )}
+      >
+        {text}
+      </h3>
     </section>
   );
 };
