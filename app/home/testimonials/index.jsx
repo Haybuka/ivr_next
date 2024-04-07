@@ -32,7 +32,7 @@ const testimonials = [
   {
     body: `""Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita sequi cupiditate harum repellendus ipsum dignissimos? Officiis ipsam dolorum magnam assumenda."`,
     idRef: 'boxTwo',
-    initial: { x: 550, scale: 1.1 },
+    initial: { x: 580, scale: 1.1 },
     svg: (
       <svg
         stroke="currentColor"
@@ -55,7 +55,7 @@ const testimonials = [
   {
     body: `""Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita sequi cupiditate harum repellendus ipsum dignissimos? Officiis ipsam dolorum magnam assumenda."`,
     idRef: 'boxThree',
-    initial: { x: 580, scale: 1.15 },
+    initial: { x: 610, scale: 1.15 },
     svg: (
       <svg
         stroke="currentColor"
@@ -79,7 +79,7 @@ const testimonials = [
   {
     body: `""Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita sequi cupiditate harum repellendus ipsum dignissimos? Officiis ipsam dolorum magnam assumenda."`,
     idRef: 'boxFour',
-    initial: { x: 610, scale: 1.2 },
+    initial: { x: 640, scale: 1.2 },
     svg: (
       <svg
         stroke="currentColor"
