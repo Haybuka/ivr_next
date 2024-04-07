@@ -48,7 +48,7 @@ const Testimonials = () => {
     >
       <aside className="col-span-7 flex justify-center items-center p-4 md:p-16">
         <div>
-          <h3 className="text-4xl font-semibold mb-4">
+          <h3 className=" text-2xl md:text-4xl font-semibold mb-4">
             What our customers think
           </h3>
           <p>
@@ -57,7 +57,7 @@ const Testimonials = () => {
             eos iure magnam!
           </p>
           <ul className="flex gap-x-4 my-4">
-            <li className="w-24 h-1 bg-slate-200 relative">
+            <li className=" w-12 md:w-24 h-1 bg-slate-200 relative">
               {' '}
               <motion.span
                 initial={{ width: 0 }}
@@ -65,7 +65,7 @@ const Testimonials = () => {
                 className="h-full bg-black absolute top-0 left-0"
               ></motion.span>{' '}
             </li>
-            <li className="w-24 h-1 bg-slate-200 relative">
+            <li className=" w-12 md:w-24 h-1 bg-slate-200 relative">
               {' '}
               <motion.span
                 initial={{ width: 0 }}
@@ -73,7 +73,7 @@ const Testimonials = () => {
                 className="h-full bg-black absolute top-0 left-0"
               ></motion.span>{' '}
             </li>
-            <li className="w-24 h-1 bg-slate-200 relative">
+            <li className=" w-12 md:w-24 h-1 bg-slate-200 relative">
               {' '}
               <motion.span
                 initial={{ width: 0 }}
@@ -81,7 +81,7 @@ const Testimonials = () => {
                 className="h-full bg-black absolute top-0 left-0"
               ></motion.span>{' '}
             </li>
-            <li className="w-24 h-1 bg-slate-200 relative">
+            <li className=" w-12 md:w-24 h-1 bg-slate-200 relative">
               {' '}
               <motion.span
                 initial={{ width: 0 }}
@@ -92,7 +92,7 @@ const Testimonials = () => {
           </ul>
         </div>
       </aside>
-      <aside className="col-span-5 px-8 md:px-10 py-28 lg:py-40 lg:px-0">
+      <aside className="col-span-5 px-8 py-8 md:px-10 md:py-28 lg:py-40 lg:px-0">
         <ul
           ref={scope}
           className="h-[400px] w-full lg:h-[500px] lg:w-[600px] flex justify-center items-center relative shadow-md   "
