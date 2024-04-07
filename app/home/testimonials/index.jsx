@@ -108,20 +108,20 @@ const Testimonials = () => {
 
   const handleAnimateBoxCallback = useCallback(async () => {
     await animate('#progress0', { width: '100%' }, { duration: 5 });
-    await animate('#boxTwo', { x: 0, scale: 1 }, { duration: 0.5, delay: 0.2 });
-    await animate('#progress1', { width: '100%' }, { duration: 5, delay: 0.5 });
+    await animate('#boxTwo', { x: 0, scale: 1 }, { duration: 0.2, delay: 0.2 });
+    await animate('#progress1', { width: '100%' }, { duration: 5, delay: 0.2 });
     await animate(
       '#boxThree',
       { x: 0, scale: 1 },
-      { duration: 0.5, delay: 0.2 }
+      { duration: 0.2, delay: 0.2 }
     );
-    await animate('#progress2', { width: '100%' }, { duration: 5, delay: 0.5 });
+    await animate('#progress2', { width: '100%' }, { duration: 5, delay: 0.2 });
     await animate(
       '#boxFour',
       { x: 0, scale: 1 },
-      { duration: 0.5, delay: 0.2 }
+      { duration: 0.2, delay: 0.2 }
     );
-    await animate('#progress3', { width: '100%' }, { duration: 5, delay: 0.5 });
+    await animate('#progress3', { width: '100%' }, { duration: 5, delay: 0.2 });
   }, [animate]);
 
   const createProgressBar = (cardLength) => {
