@@ -1,7 +1,6 @@
 'use client';
 import React, { useCallback, useEffect, useState } from 'react';
-import { useAnimate, useInView, motion } from 'framer-motion';
-import TestimonialCard from './card';
+import { useAnimate, useInView } from 'framer-motion';
 import Slider from './slider';
 import ProgressUi from './progressUi';
 
@@ -148,15 +147,10 @@ const Testimonials = () => {
     >
       <aside className="col-span-7 flex justify-center items-center p-4 md:p-16">
         <div>
-          <h3 className="text-2xl font-semibold bg-white py-3 lg:px-4 font-titilium">
+          <h3 className="text-2xl font-semibold bg-white py-3 font-titilium">
             What our customers think
           </h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus
-            commodi sint, similique cupiditate possimus suscipit delectus illum
-            eos iure magnam!.
-          </p>
-          <p>
+          <p className="my-6">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus
             commodi sint, similique cupiditate possimus suscipit delectus illum
             eos iure magnam!.
