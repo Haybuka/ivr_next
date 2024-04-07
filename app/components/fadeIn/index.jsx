@@ -10,7 +10,6 @@ const FadeIn = ({ children }) => {
     if (isInView) {
       mainControls.start('visible');
     }
-    console.log(isInView);
   }, [isInView, mainControls]);
   return (
     <motion.aside

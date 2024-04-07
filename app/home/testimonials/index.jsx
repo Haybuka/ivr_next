@@ -139,7 +139,6 @@ const Testimonials = () => {
     createProgressBar(testimonials.length);
   }, [isInView, handleAnimateBoxCallback]);
 
-  console.log(progress);
   return (
     <section
       className="lg:grid grid-cols-12 my-12 overflow-x-hidden"

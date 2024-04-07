@@ -43,7 +43,7 @@ export const navigation = [
     path: '/',
   },
   {
-    name: 'About',
+    name: 'about',
     path: '/about',
   },
   {
