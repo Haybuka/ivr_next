@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import cls from 'classnames';
+import RevealMotion from '../reveal';
 
 const Card = ({ data: { id, title, text_one, text_two, imageSrc } }) => {
   return (
@@ -13,12 +14,19 @@ const Card = ({ data: { id, title, text_one, text_two, imageSrc } }) => {
       )}
     >
       <aside className="w-full my-4 md:w-[500px] ">
-        <h4 className="text-2xl font-semibold bg-white lg:px-4 font-titilium ">
-          {title}
-        </h4>
+        <RevealMotion>
+          <h4 className="text-2xl font-semibold bg-white lg:px-4 font-titilium ">
+            {title}
+          </h4>
+        </RevealMotion>
+
         <div className=" bg-white lg:px-4">
-          <p className="my-3">{text_one}</p>
-          <p className="my-3">{text_two}</p>
+          <RevealMotion>
+            <p className="my-3">{text_one}</p>
+          </RevealMotion>
+          <RevealMotion>
+            <p className="my-3">{text_two}</p>
+          </RevealMotion>
         </div>
       </aside>
       <aside className="h-[400px] w-full md:w-[600px] bg-black">
