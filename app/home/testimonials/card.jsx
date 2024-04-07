@@ -19,7 +19,7 @@ const TestimonialCard = ({ testimonial, inverted }) => {
       <p className="italic">{body}</p>
       <div>
         <h4 className="font-bold capitalize">{name}</h4>
-        <p className="font-sm">{role}</p>
+        <span className="text-sm">{role}</span>
       </div>
     </motion.li>
   );

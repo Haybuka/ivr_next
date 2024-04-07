@@ -1,7 +1,9 @@
 'use client';
-import React, { useCallback, useEffect } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { useAnimate, useInView, motion } from 'framer-motion';
 import TestimonialCard from './card';
+import Slider from './slider';
+import ProgressUi from './progressUi';
 
 const testimonials = [
   {
@@ -99,46 +101,46 @@ const testimonials = [
     role: 'Software developer, Atlassian',
   },
 ];
+
 const Testimonials = () => {
   const [scope, animate] = useAnimate();
+  const [progress, setProgress] = useState([]);
   const isInView = useInView(scope);
 
   const handleAnimateBoxCallback = useCallback(async () => {
-    await animate('#progressOne', { width: '100%' }, { duration: 5 });
+    await animate('#progress0', { width: '100%' }, { duration: 5 });
     await animate('#boxTwo', { x: 0, scale: 1 }, { duration: 0.5, delay: 0.2 });
-    await animate(
-      '#progressTwo',
-      { width: '100%' },
-      { duration: 5, delay: 0.5 }
-    );
+    await animate('#progress1', { width: '100%' }, { duration: 5, delay: 0.5 });
     await animate(
       '#boxThree',
       { x: 0, scale: 1 },
       { duration: 0.5, delay: 0.2 }
     );
-    await animate(
-      '#progressThree',
-      { width: '100%' },
-      { duration: 5, delay: 0.5 }
-    );
+    await animate('#progress2', { width: '100%' }, { duration: 5, delay: 0.5 });
     await animate(
       '#boxFour',
       { x: 0, scale: 1 },
       { duration: 0.5, delay: 0.2 }
     );
-    await animate(
-      '#progressFour',
-      { width: '100%' },
-      { duration: 5, delay: 0.5 }
-    );
+    await animate('#progress3', { width: '100%' }, { duration: 5, delay: 0.5 });
   }, [animate]);
+
+  const createProgressBar = (cardLength) => {
+    const newArray = [];
+    for (let i = 0; i < cardLength; i++) {
+      newArray.push(`progress${i}`);
+    }
+    setProgress(newArray);
+  };
 
   useEffect(() => {
     if (isInView) {
       handleAnimateBoxCallback();
     }
+    createProgressBar(testimonials.length);
   }, [isInView, handleAnimateBoxCallback]);
 
+  console.log(progress);
   return (
     <section
       className="lg:grid grid-cols-12 my-12 overflow-x-hidden"
@@ -160,54 +162,14 @@ const Testimonials = () => {
             eos iure magnam!.
           </p>
           <ul className="flex gap-x-4 my-6">
-            <li className=" w-12 md:w-24 h-1 bg-slate-200 relative">
-              {' '}
-              <motion.span
-                initial={{ width: 0 }}
-                id="progressOne"
-                className="h-full bg-black absolute top-0 left-0"
-              ></motion.span>{' '}
-            </li>
-            <li className=" w-12 md:w-24 h-1 bg-slate-200 relative">
-              {' '}
-              <motion.span
-                initial={{ width: 0 }}
-                id="progressTwo"
-                className="h-full bg-black absolute top-0 left-0"
-              ></motion.span>{' '}
-            </li>
-            <li className=" w-12 md:w-24 h-1 bg-slate-200 relative">
-              {' '}
-              <motion.span
-                initial={{ width: 0 }}
-                id="progressThree"
-                className="h-full bg-black absolute top-0 left-0"
-              ></motion.span>{' '}
-            </li>
-            <li className=" w-12 md:w-24 h-1 bg-slate-200 relative">
-              {' '}
-              <motion.span
-                initial={{ width: 0 }}
-                id="progressFour"
-                className="h-full bg-black absolute"
-              ></motion.span>{' '}
-            </li>
+            {progress.map((data, id) => (
+              <ProgressUi idRef={data} key={id} />
+            ))}
           </ul>
         </div>
       </aside>
       <aside className="col-span-5 px-6 py-6 md:px-10 lg:py-28 lg:px-0">
-        <ul
-          ref={scope}
-          className="h-[400px] w-full lg:h-[500px] lg:w-[600px] flex justify-center items-center relative shadow-md   "
-        >
-          {testimonials.map((testimonial, id) => (
-            <TestimonialCard
-              key={id}
-              inverted={id % 2 === 0}
-              testimonial={testimonial}
-            />
-          ))}
-        </ul>
+        <Slider scope={scope} testimonials={testimonials} />
       </aside>
     </section>
   );
