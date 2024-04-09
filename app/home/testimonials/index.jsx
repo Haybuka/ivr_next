@@ -105,7 +105,7 @@ const Testimonials = () => {
   const [scope, animate] = useAnimate();
   const [progress, setProgress] = useState([]);
   const isInView = useInView(scope);
-
+  const [isCompleted, setIsCompleted] = useState(false);
   const handleAnimateBoxCallback = useCallback(async () => {
     await animate('#progress0', { width: '100%' }, { duration: 5 });
     await animate('#boxTwo', { x: 0, scale: 1 }, { duration: 0.2, delay: 0.2 });
@@ -121,7 +121,18 @@ const Testimonials = () => {
       { x: 0, scale: 1 },
       { duration: 0.2, delay: 0.2 }
     );
-    await animate('#progress3', { width: '100%' }, { duration: 5, delay: 0.2 });
+    await animate(
+      '#progress3',
+      { width: '100%' },
+      {
+        duration: 5,
+        delay: 0.2,
+        onComplete: (data) => {
+          console.log('completed');
+          setIsCompleted((prev) => !prev);
+        },
+      }
+    );
   }, [animate]);
 
   const createProgressBar = (cardLength) => {
@@ -133,11 +144,11 @@ const Testimonials = () => {
   };
 
   useEffect(() => {
+    createProgressBar(testimonials.length);
     if (isInView) {
       handleAnimateBoxCallback();
     }
-    createProgressBar(testimonials.length);
-  }, [isInView, handleAnimateBoxCallback]);
+  }, [isInView, handleAnimateBoxCallback, isCompleted]);
 
   return (
     <section

@@ -7,6 +7,7 @@ import { useState } from 'react';
 import GSlider from './GSlider';
 import GDescription from './GDescription';
 import { gallerySlides } from '../utils';
+import AnimatedScroller from './animatedScroller';
 const Index = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -29,6 +30,7 @@ const Index = () => {
         />
         <GDescription details={gallerySlides[activeIndex]} />
       </section>
+      <AnimatedScroller />
     </main>
   );
 };
