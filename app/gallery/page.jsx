@@ -22,7 +22,7 @@ const Index = () => {
           Gallery
         </h3>
       </section>
-      <section className="my-10 px-6 md:px-[30px] lg:px-[100px] lg:flex items-center justify-around">
+      <section className="my-20 px-6 md:px-[30px] lg:px-[100px] lg:flex items-center justify-around">
         <GSlider
           handleActiveIndex={handleActiveIndex}
           activeIndex={activeIndex}
