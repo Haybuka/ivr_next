@@ -152,7 +152,7 @@ const Testimonials = () => {
 
   return (
     <section
-      className="lg:grid grid-cols-12 my-12 overflow-x-hidden"
+      className="lg:grid grid-cols-12 my-12 overflow-x-hidden hidden lg:hidden"
       ref={scope}
     >
       <aside className="col-span-7 flex justify-center items-center p-4 md:p-16">

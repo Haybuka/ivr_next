@@ -50,10 +50,10 @@ export const navigation = [
     name: 'services',
     path: '/services',
   },
-  {
-    name: 'gallery',
-    path: '/gallery',
-  },
+  // {
+  //   name: 'gallery',
+  //   path: '/gallery',
+  // },
   {
     name: 'contact',
     path: '/contact',
